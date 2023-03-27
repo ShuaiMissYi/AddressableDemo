@@ -17,13 +17,13 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 4e5fa96cd93477641b024f1986d11d8b
   m_SerializeEntries:
-  - m_GUID: ad42c257371ca8448a568436a222e6af
-    m_Address: Assets/Textures/kenan.png
+  - m_GUID: 6a194cc80f801a64794636492f62ee92
+    m_Address: Assets/Textures/xiaolan.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - texture
-  - m_GUID: 6a194cc80f801a64794636492f62ee92
-    m_Address: Assets/Textures/xiaolan.png
+  - m_GUID: ad42c257371ca8448a568436a222e6af
+    m_Address: Assets/Textures/kenan.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - texture
