@@ -1,0 +1,9 @@
+Library/
+Temp/
+Logs/
+.vs/
+obj/
+.vsconfig
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+AddressableDemo.sln
