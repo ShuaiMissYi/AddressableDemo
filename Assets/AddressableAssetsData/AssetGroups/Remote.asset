@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: RemoteGroup
+  m_Name: Remote
   m_EditorClassIdentifier: 
-  m_GroupName: RemoteGroup
+  m_GroupName: Remote
   m_Data:
     m_SerializedData: []
-  m_GUID: 3e611f5484c8b9b47a4ced6f2b80dbd8
+  m_GUID: 4e5fa96cd93477641b024f1986d11d8b
   m_SerializeEntries:
-  - m_GUID: 6a194cc80f801a64794636492f62ee92
-    m_Address: Assets/Textures/xiaolan.png
+  - m_GUID: ad42c257371ca8448a568436a222e6af
+    m_Address: Assets/Textures/kenan.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - texture
-  - m_GUID: ad42c257371ca8448a568436a222e6af
-    m_Address: Assets/Textures/kenan.png
+  - m_GUID: 6a194cc80f801a64794636492f62ee92
+    m_Address: Assets/Textures/xiaolan.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - texture
@@ -31,5 +31,5 @@ MonoBehaviour:
   m_Settings: {fileID: 11400000, guid: d77bb5a83010eff4787950904e23f88d, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 31a1f4ce186602c4ea98f3d6032ad45c, type: 2}
-    - {fileID: 11400000, guid: 39128b40eb9c4904fa7645635808a9e6, type: 2}
+    - {fileID: 11400000, guid: 782e90ebd5098bd44849a0a94ec46579, type: 2}
+    - {fileID: 11400000, guid: f364201b09e7c504baeca21d2d7c3435, type: 2}
