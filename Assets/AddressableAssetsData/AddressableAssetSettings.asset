@@ -62,7 +62,7 @@ MonoBehaviour:
       - m_Id: 3dc702ad90a19984fa98299677b65c4f
         m_Value: ServerData/[BuildTarget]
       - m_Id: b016456e4ab6cd04ebffb89145dd2de2
-        m_Value: https://github.com/ShuaiMissYi/AddressableDemo/blob/main/ServerData/StandaloneWindows64
+        m_Value: https://github.com/ShuaiMissYi/AddressableDemo/tree/main/ServerData/StandaloneWindows64
     m_ProfileEntryNames:
     - m_Id: 74bbad178a49a25439cbf7df4df233b5
       m_Name: BuildTarget
@@ -118,7 +118,7 @@ MonoBehaviour:
           m_Key: ContentRoot
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Boolean
-          m_Data: False
+          m_Data: True
           m_Key: IsEnabled
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.String
