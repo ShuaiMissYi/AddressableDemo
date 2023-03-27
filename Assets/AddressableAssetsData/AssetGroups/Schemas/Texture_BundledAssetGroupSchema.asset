@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d17a21594effb4e9591490b009e7aa, type: 3}
-  m_Name: TextureGroup_BundledAssetGroupSchema
+  m_Name: Texture_BundledAssetGroupSchema
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: 5ede5b7ec6fe0364292cc03768f727ee, type: 2}
+  m_Group: {fileID: 11400000, guid: f8a21d14ad0bdf845b3891b7bd1363e5, type: 2}
   m_InternalBundleIdMode: 1
   m_Compression: 1
   m_IncludeAddressInCatalog: 1

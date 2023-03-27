@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: TextureGroup
+  m_Name: Texture
   m_EditorClassIdentifier: 
-  m_GroupName: TextureGroup
+  m_GroupName: Texture
   m_Data:
     m_SerializedData: []
-  m_GUID: 7f816280fbf619d4394e106fda95632d
+  m_GUID: fc470eaf7725f3e46bea55f11a8374a0
   m_SerializeEntries:
   - m_GUID: ad42c257371ca8448a568436a222e6af
     m_Address: Assets/Textures/kenan.png
@@ -31,5 +31,5 @@ MonoBehaviour:
   m_Settings: {fileID: 11400000, guid: d77bb5a83010eff4787950904e23f88d, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 07767bc5398c64a46bf9ffc01e41bf88, type: 2}
-    - {fileID: 11400000, guid: 49049acdf033877438a01c777cc24e72, type: 2}
+    - {fileID: 11400000, guid: 8c4358739e12eca4aad698c0ebe14dfc, type: 2}
+    - {fileID: 11400000, guid: 4a7fdfe6d491d1944ba7f5d6132db069, type: 2}
