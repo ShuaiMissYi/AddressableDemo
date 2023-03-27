@@ -20,8 +20,6 @@ public class Main : MonoBehaviour
             img.texture = tex;
             img.GetComponent<RectTransform>().sizeDelta = new Vector2 (tex.width, tex.height);
         };
-
-
     }
 
 
