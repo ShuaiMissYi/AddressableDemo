@@ -35,6 +35,7 @@ public class CheckUpdateAndDownload : MonoBehaviour
 
     IEnumerator IE_DoUpdateAddressadble()
     {
+        UpdateText.text += "\n  开始更新";
         AsyncOperationHandle<IResourceLocator> initHandle = Addressables.InitializeAsync();
         yield return initHandle;
 
@@ -48,6 +49,7 @@ public class CheckUpdateAndDownload : MonoBehaviour
         };
         yield return checkHandle;
         Debug.Log($"catalogsToUpdate.Count  {catalogsToUpdate.Count}");
+        UpdateText.text += $"\n  catalogsToUpdate.Count   {catalogsToUpdate.Count} ";
         if (catalogsToUpdate.Count > 0)
         {
             //更新目录
