@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.AddressableAssets;
 using UnityEngine.AddressableAssets.ResourceLocators;
 using UnityEngine.ResourceManagement.AsyncOperations;
-using UnityEditor.PackageManager;
 
 public class CheckUpdateAndDownload : MonoBehaviour
 {
