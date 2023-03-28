@@ -107,9 +107,11 @@ public class CheckUpdateAndDownload : MonoBehaviour
     private void EnterGame()
     {
         Debug.Log("进入游戏");
+        UpdateText.text += "\n 进入游戏";
 
         Addressables.LoadAssetAsync<Texture2D>(key).Completed += (handle) =>
         {
+            UpdateText.text += "\n  加载完成";
             Texture2D tex = handle.Result;
             img.texture = tex;
             img.GetComponent<RectTransform>().sizeDelta = new Vector2(tex.width, tex.height);
