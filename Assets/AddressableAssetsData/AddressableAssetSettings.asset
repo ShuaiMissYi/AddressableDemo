@@ -17,7 +17,7 @@ MonoBehaviour:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 0
+  m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
   m_CatalogRequestsTimeout: 0
   m_DisableCatalogUpdateOnStart: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
       - m_Id: 3dc702ad90a19984fa98299677b65c4f
         m_Value: ServerData/[BuildTarget]
       - m_Id: b016456e4ab6cd04ebffb89145dd2de2
-        m_Value: https://github.com/ShuaiMissYi/AddressableDemo/tree/main/ServerData/StandaloneWindows64
+        m_Value: https://github.com/ShuaiMissYi/AddressableDemo/raw/main/ServerData/StandaloneWindows64
     m_ProfileEntryNames:
     - m_Id: 74bbad178a49a25439cbf7df4df233b5
       m_Name: BuildTarget
@@ -106,7 +106,7 @@ MonoBehaviour:
         m_SerializedData:
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Int32
-          m_Data: 62846
+          m_Data: 51670
           m_Key: HostingServicePort
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Int32
@@ -122,13 +122,13 @@ MonoBehaviour:
           m_Key: IsEnabled
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.String
-          m_Data: Local Hosting 4
+          m_Data: Local Hosting 5
           m_Key: DescriptiveName
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Int32
-          m_Data: 4
+          m_Data: 5
           m_Key: InstanceId
     m_Settings: {fileID: 11400000}
-    m_NextInstanceId: 5
+    m_NextInstanceId: 6
     m_RegisteredServiceTypeRefs:
     - UnityEditor.AddressableAssets.HostingServices.HttpHostingService, Unity.Addressables.Editor
