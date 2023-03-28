@@ -9,6 +9,11 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 public class CheckUpdateAndDownload : MonoBehaviour
 {
 
+    private string key = "Assets/Textures/kenan.png";
+
+    public RawImage img;
+
+
     /// <summary>
     /// 显示下载状态和进度
     /// </summary>
@@ -38,18 +43,19 @@ public class CheckUpdateAndDownload : MonoBehaviour
         AsyncOperationHandle<List<string>> checkHandle = Addressables.CheckForCatalogUpdates();
         checkHandle.Completed += op =>
         {
+            Debug.Log("checkHandle.Completed  ");
             catalogsToUpdate.AddRange(op.Result);
         };
         yield return checkHandle;
+        Debug.Log($"catalogsToUpdate.Count  {catalogsToUpdate.Count}");
         if (catalogsToUpdate.Count > 0)
         {
             //更新目录
-            AsyncOperationHandle<List<IResourceLocator>> updateHandle
-            = Addressables.UpdateCatalogs(catalogsToUpdate);
+            AsyncOperationHandle<List<IResourceLocator>> updateHandle = Addressables.UpdateCatalogs(catalogsToUpdate);
             yield return updateHandle;
-            Addressables.Release(updateHandle);
             //
             List<IResourceLocator> locators = updateHandle.Result;
+            Debug.Log($"locators.count   {locators.Count}");
             foreach (IResourceLocator locator in locators)
             {
                 List<object> keys = new();
@@ -101,6 +107,14 @@ public class CheckUpdateAndDownload : MonoBehaviour
     private void EnterGame()
     {
         Debug.Log("进入游戏");
+
+        Addressables.LoadAssetAsync<Texture2D>(key).Completed += (handle) =>
+        {
+            Texture2D tex = handle.Result;
+            img.texture = tex;
+            img.GetComponent<RectTransform>().sizeDelta = new Vector2(tex.width, tex.height);
+        };
+
     }
 
 

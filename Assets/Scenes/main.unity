@@ -237,10 +237,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 684640138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d02802a6804904bbd80ab6a02d34cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 57366782eaf694a409a715fa19e35278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 122796876}
+  UpdateText: {fileID: 1566872167}
+  RetryBtn: {fileID: 1938326414}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
