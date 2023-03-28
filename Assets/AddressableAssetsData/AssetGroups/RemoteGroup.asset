@@ -17,7 +17,7 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 8848aa7dd1ef8c74881470ef69aec469
   m_SerializeEntries:
-  - m_GUID: ad42c257371ca8448a568436a222e6af
+  - m_GUID: 334552ca24f092c4b8dbb80e013ea0a1
     m_Address: Assets/Textures/kenan.png
     m_ReadOnly: 0
     m_SerializedLabels:
