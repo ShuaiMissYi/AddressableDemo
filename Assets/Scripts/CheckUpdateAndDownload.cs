@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.AddressableAssets;
 using UnityEngine.AddressableAssets.ResourceLocators;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEditor.PackageManager;
 
 public class CheckUpdateAndDownload : MonoBehaviour
 {
@@ -44,7 +45,7 @@ public class CheckUpdateAndDownload : MonoBehaviour
         AsyncOperationHandle<List<string>> checkHandle = Addressables.CheckForCatalogUpdates();
         checkHandle.Completed += op =>
         {
-            Debug.Log("checkHandle.Completed  ");
+            Debug.Log("checkHandle.Completed  ");         
             catalogsToUpdate.AddRange(op.Result);
         };
         yield return checkHandle;
@@ -67,7 +68,7 @@ public class CheckUpdateAndDownload : MonoBehaviour
                 yield return sizeHandle;
                 if (sizeHandle.Status != AsyncOperationStatus.Succeeded)
                 {
-                    Debug.LogErrorFormat("GetDownloadSizeAsync Error\n" + sizeHandle.OperationException.ToString());
+                    OnError("GetDownloadSizeAsync Error\n" + sizeHandle.OperationException.ToString());
                     yield break;
                 }
                 long totalDownloadSize = (long)sizeHandle.Result;
@@ -81,7 +82,7 @@ public class CheckUpdateAndDownload : MonoBehaviour
                     {
                         if (downloadHandle.Status == AsyncOperationStatus.Failed)
                         {
-                            Debug.LogErrorFormat("DownloadDependenciesAsync Error\n" + downloadHandle.OperationException.ToString());
+                            OnError("DownloadDependenciesAsync Error\n" + downloadHandle.OperationException.ToString());
                             yield break;
                         }
                         //下载进度
@@ -104,6 +105,12 @@ public class CheckUpdateAndDownload : MonoBehaviour
         }
         //进入游戏
         EnterGame();
+    }
+
+    private void OnError(string msg)
+    {
+        UpdateText.text += $"\n {msg}  \n 请重试";
+        RetryBtn.gameObject.SetActive(true);
     }
 
     private void EnterGame()
